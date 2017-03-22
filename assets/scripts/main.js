@@ -74,7 +74,7 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
-  // fixed header shrink effect
+  // JMW fixed header shrink effect
   $(window).scroll(function() {
   	if ($(document).scrollTop() > 400) {
   		$('#masthead').addClass('shrink');
@@ -82,5 +82,8 @@
   		$('#masthead').removeClass('shrink');
   	}
   });
+
+  // JMW remove dimensions from logo
+  $('.custom-logo').removeAttr('width').removeAttr('height');
 
 })(jQuery); // Fully reference jQuery after this point.

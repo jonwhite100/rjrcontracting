@@ -1,8 +1,11 @@
 @import "common/variables";
 
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
 // @import "common/global";
@@ -26,6 +29,8 @@
   header.php - copy bootstrap version of header
   _navbar.scss - create this file
   copy the content-foo.php, template-foo.php, page-header-foo.php
+	bower install fontawesome and add in path to fonts in main.scss
+	add_theme_support for custom logo
 */
 
 @import "common/navbar";
@@ -43,15 +48,6 @@ header {
   transition: 0.33s ease-in;
   background-color:rgba(0,0,0,0.5);
 
-  .navbar-brand {
-    height:auto;
-    padding:0 10px;
-  }
-
-  .custom-logo {
-    transform: scale(0.6);
-  }
-
   .menu-main-nav-container {
     height:$navbar-height / 1.4;
 
@@ -61,10 +57,21 @@ header {
   }
 }
 
-
 /* carousel on the home page */
 .carousel-wrapper {
-  position:absolute;
-  top: 0;
-  left: 0;
+  // position:absolute;
+  // top: 0;
+  // left: 0;
+}
+
+.carousel-caption {
+	background-color: rgba(55, 55, 55, 0.25);
+	font-size: $font-size-h1 * 1.25;
+	text-transform: uppercase;
+	text-shadow: none;
+	color: $white;
+	padding: 10px 20px;
+	margin-bottom: 50px;
+	left: 10%;
+	right: 10%;
 }

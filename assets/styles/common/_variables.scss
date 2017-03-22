@@ -2,5 +2,15 @@
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
+// Greys
+$gray-base:                             #000 !default;
+$gray-darker:                           lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:                             lighten($gray-base, 20%) !default;   // #333
+$gray:                                  lighten($gray-base, 40.5%) !default; //
+$gray-light:                            lighten($gray-base, 74.7%) !default; // #bebebe
+$gray-lighter:                          lighten($gray-base, 93.5%) !default; // #eee
+
 // Colors
-$brand-primary:         #27ae60;
+$white:                 #fff;
+$black:                 #000;
+$brand-primary:         #076633;

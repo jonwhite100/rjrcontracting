@@ -2,8 +2,8 @@
   // border-bottom:0;
   position:fixed;
   // top:0;
-  // left:0;
-  // right:0;
+  left:0;
+  right:0;
   // height:$navbar-height;
 }
 
@@ -25,6 +25,14 @@
   }
 }
 
+.navbar-brand {
+	 padding: 0;
+
+   .custom-logo {
+     width: 80%;
+   }
+}
+
 .shrink {
   .navbar-nav {
     // Uncollapse the nav
@@ -39,10 +47,16 @@
       }
     }
   }
-}
 
-// absolue position static navbar
-.navbar-static-top {
+  .navbar-brand {
+    //
+		//
 
-
+    .custom-logo {
+      //width: 50%;
+      transform-origin: 50% 0%;
+      transition: 0.33s ease-in-out;
+      transform: scale(0.5);
+    }
+  }
 }
