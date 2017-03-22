@@ -74,4 +74,13 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
+  // fixed header shrink effect
+  $(window).scroll(function() {
+  	if ($(document).scrollTop() > 400) {
+  		$('#masthead').addClass('shrink');
+  	} else {
+  		$('#masthead').removeClass('shrink');
+  	}
+  });
+
 })(jQuery); // Fully reference jQuery after this point.

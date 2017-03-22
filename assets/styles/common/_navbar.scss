@@ -1,0 +1,48 @@
+.navbar-static-top {
+  // border-bottom:0;
+  position:fixed;
+  // top:0;
+  // left:0;
+  // right:0;
+  // height:$navbar-height;
+}
+
+.navbar-nav {
+  margin-left:40px;
+  // Uncollapse the nav
+  @media (min-width: $grid-float-breakpoint) {
+    > li {
+      margin-right:10px;
+      > a {
+        padding-top:    $navbar-padding-vertical / 3;
+        padding-bottom: $navbar-padding-vertical / 3;
+        transition:.5s;
+        font-size:$font-size-base*1.2;
+        border-radius:4px;
+        font-family:$headings-font-family;
+      }
+    }
+  }
+}
+
+.shrink {
+  .navbar-nav {
+    // Uncollapse the nav
+    @media (min-width: $grid-float-breakpoint) {
+      > li {
+        > a {
+          padding-top:   10px;
+          padding-bottom: 10px;
+          //color:$brand-primary;
+          transition: 0.33s ease-in;
+        }
+      }
+    }
+  }
+}
+
+// absolue position static navbar
+.navbar-static-top {
+
+
+}

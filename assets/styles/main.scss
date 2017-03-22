@@ -17,3 +17,54 @@
 // @import "layouts/pages";
 // @import "layouts/posts";
 // @import "layouts/tinymce";
+
+// New setup
+/*
+  remove bootstrap and install bootstrap-sass
+  bower install --save slick-carousel
+  main.js - add in the shrink header script
+  header.php - copy bootstrap version of header
+  _navbar.scss - create this file
+  copy the content-foo.php, template-foo.php, page-header-foo.php
+*/
+
+@import "common/navbar";
+
+
+/* shrink the navbar - unshrunk state */
+header {
+	-webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.shrink {
+  height:$navbar-height / 1.4!important;
+  min-height:$navbar-height / 1.4!important;
+  transition: 0.33s ease-in;
+  background-color:rgba(0,0,0,0.5);
+
+  .navbar-brand {
+    height:auto;
+    padding:0 10px;
+  }
+
+  .custom-logo {
+    transform: scale(0.6);
+  }
+
+  .menu-main-nav-container {
+    height:$navbar-height / 1.4;
+
+      .navbar-nav {
+        padding-top:10px;
+      }
+  }
+}
+
+
+/* carousel on the home page */
+.carousel-wrapper {
+  position:absolute;
+  top: 0;
+  left: 0;
+}
