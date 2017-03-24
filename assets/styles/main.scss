@@ -8,19 +8,6 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
-// @import "common/global";
-// @import "components/buttons";
-// @import "components/comments";
-// @import "components/forms";
-// @import "components/grid";
-// @import "components/wp-classes";
-// @import "layouts/header";
-// @import "layouts/sidebar";
-// @import "layouts/footer";
-// @import "layouts/pages";
-// @import "layouts/posts";
-// @import "layouts/tinymce";
-
 // New setup
 /*
   remove bootstrap and install bootstrap-sass
@@ -34,7 +21,6 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 */
 
 @import "common/navbar";
-
 
 /* shrink the navbar - unshrunk state */
 header {
@@ -65,13 +51,91 @@ header {
 }
 
 .carousel-caption {
-	background-color: rgba(55, 55, 55, 0.25);
+	background-color: rgba(7, 102, 51, 0.75);
+	border-bottom:3px solid $brand-secondary;
+	border-top:3px solid $brand-secondary;
+	font-family: $headings-font-family;
 	font-size: $font-size-h1 * 1.25;
 	text-transform: uppercase;
 	text-shadow: none;
-	color: $white;
-	padding: 10px 20px;
+	color: $brand-secondary;
+	padding: 20px 20px;
 	margin-bottom: 50px;
-	left: 10%;
-	right: 10%;
+	left: 0%;
+	right: 0%;
+}
+
+.carousel-indicators {
+	li {
+		border-color: $brand-secondary;
+
+		&.active {
+			background-color: $brand-secondary;
+		}
+	}
+}
+
+// page header title
+.page-header {
+	//background-color: $brand-primary;
+	// margin: 0;
+	// width: 100%;
+	// border-top:4px solid $brand-primary;
+//	border-bottom:4px solid $brand-primary;
+
+	h1 {
+		color: $brand-primary;
+		text-align: center;
+		// margin-top: 0;
+		// padding: 20px;
+	}
+}
+
+.home {
+	.wrap {
+		.container {
+			p {
+				text-align: center;
+			}
+		}
+	}
+}
+
+.home-sections {
+	margin: 50px 0;
+	p,
+	h2 {
+		text-align: center;
+	}
+
+	h2 {
+		color: $brand-primary;
+		margin-bottom: 30px;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.jon {
+	color: $white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: auto;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(7, 102, 51, 0.5);
+}
+
+footer {
+	border-top: 4px solid $brand-secondary;
+	margin-top: 40px;
+	background-color: $brand-primary;
+	padding: 40px 0;
+
 }

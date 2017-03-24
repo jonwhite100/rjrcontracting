@@ -86,4 +86,5 @@
   // JMW remove dimensions from logo
   $('.custom-logo').removeAttr('width').removeAttr('height');
 
+
 })(jQuery); // Fully reference jQuery after this point.

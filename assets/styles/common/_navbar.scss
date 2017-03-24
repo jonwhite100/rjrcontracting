@@ -7,19 +7,34 @@
   // height:$navbar-height;
 }
 
-.navbar-nav {
-  margin-left:40px;
-  // Uncollapse the nav
-  @media (min-width: $grid-float-breakpoint) {
-    > li {
-      margin-right:10px;
-      > a {
-        padding-top:    $navbar-padding-vertical / 3;
-        padding-bottom: $navbar-padding-vertical / 3;
-        transition:.5s;
-        font-size:$font-size-base*1.2;
-        border-radius:4px;
-        font-family:$headings-font-family;
+.navbar-default {
+  background-color: $white;
+  border-color: $white;
+
+  .menu-primary-navigation-container {
+    float: right;
+  }
+
+  .navbar-nav {
+    margin-left: 40px;
+    margin-top: 10px;
+
+    // Uncollapse the nav
+    @media (min-width: $grid-float-breakpoint) {
+      > li {
+        margin-right:10px;
+        > a {
+          padding-top:    $navbar-padding-vertical / 3;
+          padding-bottom: $navbar-padding-vertical / 3;
+          //transition:.5s;
+          font-size:$font-size-base*1.2;
+          border-radius:4px;
+          font-family:$headings-font-family;
+
+          &:hover {
+            color: $brand-primary;
+          }
+        }
       }
     }
   }
@@ -35,23 +50,22 @@
 
 .shrink {
   .navbar-nav {
+    margin-top:0;
+
     // Uncollapse the nav
     @media (min-width: $grid-float-breakpoint) {
       > li {
         > a {
           padding-top:   10px;
           padding-bottom: 10px;
-          //color:$brand-primary;
           transition: 0.33s ease-in;
+          color: $white;
         }
       }
     }
   }
 
   .navbar-brand {
-    //
-		//
-
     .custom-logo {
       //width: 50%;
       transform-origin: 50% 0%;

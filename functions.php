@@ -25,4 +25,9 @@ foreach ($sage_includes as $file) {
 
   require_once $filepath;
 }
+
+
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
+
 unset($file, $filepath);
