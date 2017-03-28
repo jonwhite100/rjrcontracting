@@ -1,0 +1,27 @@
+.carousel-fade {
+  .carousel-inner {
+    .item {
+      transition-property: opacity;
+    }
+    .active.left,
+    .active.right,
+    .item {
+      opacity: 0;
+    }
+    .active,
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+    .active.left,
+    .active.right,
+    .next,
+    .prev {
+      left: 0;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .carousel-control {
+    z-index: 2;
+  }
+}
