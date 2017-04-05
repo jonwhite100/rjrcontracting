@@ -1,6 +1,6 @@
 @import "common/variables";
 
-$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$icon-font-path: "../fonts/";
 
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:scss
@@ -195,16 +195,16 @@ footer {
 
 	&-about {
 		@extend .static-img-base;
-		background-image: url('http://localhost/rjrcontracting/public_html/wp-content/uploads/2017/03/slide-002.jpg');
+		background-image: url('./dev/wp-content/uploads/2017/03/slide-002.jpg');
 	}
-	;&-services {
+	&-services {
 		@extend .static-img-base;
-		background-image: url('http://localhost/rjrcontracting/public_html/wp-content/uploads/2017/03/slide-004.jpg');
+		background-image: url('./dev/wp-content/uploads/2017/03/slide-004.jpg');
 	}
 
 	&-contact {
 		@extend .static-img-base;
-		background-image: url('http://localhost/rjrcontracting/public_html/wp-content/uploads/2017/03/slide-003.jpg');
+		background-image: url('./dev/wp-content/uploads/2017/03/slide-003.jpg');
 	}
 
 }
